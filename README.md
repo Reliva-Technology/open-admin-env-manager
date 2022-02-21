@@ -1,9 +1,5 @@
-# Env Manager extension for laravel-admin
-
-
-## Screenshot
-
-![screenshot](https://user-images.githubusercontent.com/2421068/47560963-7ea0a800-d94c-11e8-95d9-57c6fee1d9bb.png)
+# Extended Env Manager extension for laravel-admin
+This extension is an additional requirement to update env file other than in the current project, so you can point to another env file in the same server.
 
 ## Requirements
 
@@ -12,10 +8,10 @@
 ## Installation
 
 ```bash
-composer require jxlwqq/env-manager
+composer require fadlisaad/ext-env-manager
 
 # If you want to add a link entry in the left menu, use the following command to import
-php artisan admin:import env-manager
+php artisan admin:import ext-env-manager
 ```
 
 ## Configurations
@@ -24,7 +20,7 @@ Add `extensions` option in your `config/admin.php` configuration file:
 
 ```php
 'extensions' => [
-    'env-manager' => [
+    'ext-env-manager' => [
         // If the value is set to false, this extension will be disabled
         'enable' => true
     ]
@@ -33,15 +29,9 @@ Add `extensions` option in your `config/admin.php` configuration file:
 
 ## Usage
 
-Open http://your-host/admin/env-manager
+Open http://your-host/admin/ext-env-manager
 
 And you can find the `.env` variables.
-
-
-## More resources
-
-[Awesome Laravel-admin](https://github.com/jxlwqq/awesome-laravel-admin)
-
 
 ## License
 
