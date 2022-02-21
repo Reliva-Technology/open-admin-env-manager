@@ -1,16 +1,16 @@
 <?php
 
-namespace Jxlwqq\EnvManager;
+namespace Fadlisaad\ExtEnvManager;
 
 use Encore\Admin\Extension;
 
-class EnvManager extends Extension
+class ExtEnvManager extends Extension
 {
-    public $name = 'env-manager';
+    public $name = 'ext-env-manager';
 
     public $menu = [
-        'title' => 'EnvManager',
-        'path'  => 'env-manager',
+        'title' => 'Extended Env Manager',
+        'path'  => 'ext-env-manager',
         'icon'  => 'fa-gears',
     ];
 }
