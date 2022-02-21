@@ -1,12 +1,12 @@
 <?php
 
-namespace Jxlwqq\EnvManager;
+namespace Fadlisaad\EnvManager;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Request;
 
-class Env extends Model
+class ExtEnv extends Model
 {
     protected $primaryKey = 'id';
     protected $keyType = 'int';
