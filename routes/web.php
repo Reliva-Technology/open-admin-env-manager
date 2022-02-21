@@ -1,5 +1,5 @@
 <?php
 
-use Jxlwqq\EnvManager\Http\Controllers\EnvManagerController;
+use Fadlisaad\ExtEnvManager\Http\Controllers\EnvManagerController;
 
-Route::resource('env-manager', EnvManagerController::class);
+Route::resource('ext-env-manager', ExtEnvManagerController::class);
