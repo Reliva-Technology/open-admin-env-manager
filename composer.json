@@ -1,14 +1,14 @@
 {
-    "name": "jxlwqq/env-manager",
-    "description": "Env Manager for Laravel-admin",
+    "name": "fadlisaad/ext-env-manager",
+    "description": "Extended Env Manager for Laravel-admin",
     "type": "library",
     "keywords": ["laravel-admin", "extension"],
-    "homepage": "https://github.com/jxlwqq/env-manager",
+    "homepage": "https://github.com/fadlisaad/ext-env-manager",
     "license": "MIT",
     "authors": [
         {
-            "name": "jxlwqq",
-            "email": "jxlwqq@gmail.com"
+            "name": "fadlisaad",
+            "email": "fadlisaad@gmail.com"
         }
     ],
     "require": {
@@ -20,13 +20,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Jxlwqq\\EnvManager\\": "src/"
+            "Fadlisaad\\ExtEnvManager\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Jxlwqq\\EnvManager\\EnvManagerServiceProvider"
+                "Fadlisaad\\ExtEnvManager\\ExtEnvManagerServiceProvider"
             ]
 
         }
