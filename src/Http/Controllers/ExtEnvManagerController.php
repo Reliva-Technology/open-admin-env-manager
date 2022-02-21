@@ -1,6 +1,6 @@
 <?php
 
-namespace Fadlisaad\EnvManager\Http\Controllers;
+namespace Fadlisaad\ExtEnvManager\Http\Controllers;
 
 
 use App\Http\Controllers\Controller;
