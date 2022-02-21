@@ -1,6 +1,6 @@
 <?php
 
-namespace Jxlwqq\EnvManager\Http\Controllers;
+namespace Fadlisaad\EnvManager\Http\Controllers;
 
 
 use App\Http\Controllers\Controller;
@@ -9,10 +9,10 @@ use Encore\Admin\Grid;
 use Encore\Admin\Layout\Content;
 use Encore\Admin\Controllers\HasResourceActions;
 use Encore\Admin\Show;
-use Jxlwqq\EnvManager\Env;
+use Fadlisaad\ExtEnvManager\Env;
 
 
-class EnvManagerController extends Controller
+class ExtEnvManagerController extends Controller
 {
     use HasResourceActions;
 
