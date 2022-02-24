@@ -20,7 +20,7 @@ class ExtEnvManagerController extends Controller
 
     public function __construct()
     {
-        $this->model = new Env();
+        $this->model = new ExtEnv();
     }
 
     public function index(Content $content)
