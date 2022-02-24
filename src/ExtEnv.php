@@ -14,7 +14,7 @@ class ExtEnv extends Model
 
     public function __construct(array $attributes = [])
     {
-        $this->env = config('admin.extensions.env-manager.env-file-path', base_path().'/.env');
+        $this->env = config('env_path');
         parent::__construct($attributes);
     }
 
