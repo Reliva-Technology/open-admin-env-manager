@@ -1,6 +1,6 @@
 <?php
 
-namespace Fadlisaad\EnvManager;
+namespace Fadlisaad\ExtEnvManager;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\LengthAwarePaginator;
