@@ -9,7 +9,7 @@ use Encore\Admin\Grid;
 use Encore\Admin\Layout\Content;
 use Encore\Admin\Controllers\HasResourceActions;
 use Encore\Admin\Show;
-use Fadlisaad\ExtEnvManager\Env;
+use Fadlisaad\ExtEnvManager\ExtEnv;
 
 
 class ExtEnvManagerController extends Controller
@@ -26,8 +26,8 @@ class ExtEnvManagerController extends Controller
     public function index(Content $content)
     {
         return $content
-            ->header('Title')
-            ->description('Description')
+            ->header('External Env File')
+            ->description('Manage external env file')
             ->body($this->grid());
     }
 
@@ -56,8 +56,8 @@ class ExtEnvManagerController extends Controller
      */
     public function edit($key, Content $content)
     {
-        $content->header('Title');
-        $content->description('Description');
+        $content->header('External Env File');
+        $content->description('Edit ext variable');
         $content->body($this->form()->edit($key));
         return $content;
     }
@@ -73,7 +73,7 @@ class ExtEnvManagerController extends Controller
     {
         return $content
             ->header('Create')
-            ->description('description')
+            ->description('Create new env variable')
             ->body($this->form());
     }
 
