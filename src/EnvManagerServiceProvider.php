@@ -16,7 +16,7 @@ class EnvManagerServiceProvider extends ServiceProvider
         }
 
         $this->app->booted(function () {
-            EnvManager::routes(__DIR__.'/routes/web.php');
+            EnvManager::routes(__DIR__.'/../routes/web.php');
         });
     }
 }
