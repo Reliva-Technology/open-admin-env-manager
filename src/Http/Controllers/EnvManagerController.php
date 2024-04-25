@@ -1,6 +1,6 @@
 <?php
 
-namespace Fadlisaad\ExtEnvManager\Http\Controllers;
+namespace Reliva\EnvManager\Http\Controllers;
 
 
 use App\Http\Controllers\Controller;
@@ -9,10 +9,10 @@ use OpenAdmin\Admin\Grid;
 use OpenAdmin\Admin\Layout\Content;
 use OpenAdmin\Admin\Controllers\HasResourceActions;
 use OpenAdmin\Admin\Show;
-use Fadlisaad\ExtEnvManager\ExtEnv;
+use Reliva\EnvManager\Env;
 
 
-class ExtEnvManagerController extends Controller
+class EnvManagerController extends Controller
 {
     use HasResourceActions;
 
@@ -20,14 +20,14 @@ class ExtEnvManagerController extends Controller
 
     public function __construct()
     {
-        $this->model = new ExtEnv();
+        $this->model = new Env();
     }
 
     public function index(Content $content)
     {
         return $content
-            ->header('External Env File')
-            ->description('Manage external env file')
+            ->header('Env File')
+            ->description('Manage environment file')
             ->body($this->grid());
     }
 
@@ -56,8 +56,8 @@ class ExtEnvManagerController extends Controller
      */
     public function edit($key, Content $content)
     {
-        $content->header('External Env File');
-        $content->description('Edit ext variable');
+        $content->header('Env File');
+        $content->description('Edit variable');
         $content->body($this->form()->edit($key));
         return $content;
     }
