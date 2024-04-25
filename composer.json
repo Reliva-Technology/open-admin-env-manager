@@ -1,32 +1,32 @@
 {
-    "name": "fadlisaad/ext-env-manager",
-    "description": "Extended Env Manager for Laravel-admin",
+    "name": "reliva-technology/open-admin-env-manager",
+    "description": "Env Manager for Laravel Open Admin",
     "type": "library",
-    "keywords": ["laravel-admin", "extension"],
-    "homepage": "https://github.com/fadlisaad/ext-env-manager",
+    "keywords": ["open-admin", "extension", "env"],
+    "homepage": "https://github.com/Reliva-Technology/open-admin-env-manager",
     "license": "MIT",
     "authors": [
         {
             "name": "fadlisaad",
-            "email": "fadlisaad@gmail.com"
+            "email": "tech@reliva.com.my"
         }
     ],
     "require": {
         "php": ">=7.0.0",
-        "encore/laravel-admin": "~1.6"
+        "open-admin-org/open-admin": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~6.0"
     },
     "autoload": {
         "psr-4": {
-            "Fadlisaad\\ExtEnvManager\\": "src/"
+            "Reliva\\EnvManager\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Fadlisaad\\ExtEnvManager\\ExtEnvManagerServiceProvider"
+                "Reliva\\EnvManager\\EnvManagerServiceProvider"
             ]
 
         }

@@ -1,5 +1,5 @@
 <?php
 
-use Fadlisaad\ExtEnvManager\Http\Controllers\ExtEnvManagerController;
+use Reliva\EnvManager\Http\Controllers\EnvManagerController;
 
-Route::resource('ext-env-manager', ExtEnvManagerController::class);
+Route::resource('env-manager', EnvManagerController::class);

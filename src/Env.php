@@ -1,12 +1,12 @@
 <?php
 
-namespace Fadlisaad\ExtEnvManager;
+namespace Reliva\EnvManager;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Request;
 
-class ExtEnv extends Model
+class Env extends Model
 {
     protected $primaryKey = 'id';
     protected $keyType = 'int';
@@ -104,9 +104,9 @@ class ExtEnv extends Model
         $array = $this->getEnv();
         $index = array_search($key, array_column($array, 'key'));
         if ($index !== false) {
-            $array[$index]['value'] = $value; // 更新
+            $array[$index]['value'] = $value;
         } else {
-            array_push($array, ['key' => $key, 'value' => $value]); // 新增
+            array_push($array, ['key' => $key, 'value' => $value]);
         }
         return $this->saveEnv($array);
     }
