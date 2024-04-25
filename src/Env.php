@@ -14,7 +14,7 @@ class Env extends Model
 
     public function __construct(array $attributes = [])
     {
-        $this->env = config('env_path');
+        $this->env = config('admin.extensions.env-manager.env-file-path', base_path().'/.env');
         parent::__construct($attributes);
     }
 
