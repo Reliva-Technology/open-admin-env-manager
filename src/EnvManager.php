@@ -4,7 +4,7 @@ namespace Reliva\EnvManager;
 
 use OpenAdmin\Admin\Extension;
 
-class ExtEnvManager extends Extension
+class EnvManager extends Extension
 {
     public $name = 'env-manager';
 
